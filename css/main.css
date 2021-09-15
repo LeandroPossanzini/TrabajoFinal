@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(8 , 1fr);
+    align-items: center;
+}
+
+.logo {
+    grid-column: 2/3;
+}
+.navbar .menu{
+    grid-column: 3/9;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar .menu li{
+    list-style: none;
+}
+.navbar .menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+}
+.navbar .menu a:hover{
+    background-color: #533800;
+    transition: ease-in 0.5s;
+}
+.navbar .menu-bar{
+    display: none;
+}
+.color-span{
+    color:#533800 ;
+}
+.fotoAbout {
+    background-color: rgb(66, 66, 66);
+    height: 94vh;
+    background-image: url(../imagenes/IMG_3410.jpeg);
+    background-blend-mode: overlay;
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+.fotoAbout .fotoAbout__contenido{
+    grid-column: 2/6;
+    grid-row: 3/7;
+}
+.fotoAbout h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.fotoAbout h1{
+    font-size: 3em;
+
+}
+.fotoAbout p{
+ color: black;
+ 
+}
+
+/* Pagina de About  */
+
+.contenedorAbout {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.contenedorAbout__info h1{
+    font-size: 2em;
+}
+.contenedorAbout__info h1 span{
+    color: #533800;
+}
+.contenedorAbout img{
+    width: 350px;
+    border: 7px solid #9c6800;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fab {
+    text-decoration: none;
+    color: black;
+}
+
+/*  Contacto */
+.contacto__contenedor{
+    display: flex;
+}
+
+.contacto__contenedor{
+    padding: 3em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+.formulario input {
+    padding: 10px 20px;
+    margin-bottom: 2em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #9c6800;
+    color: #fff;
+
+}
+
+.contacto__formulario h4{
+    color: rgb(107, 60, 15);
+    font-size: 2em;
+}
+.formulario textarea{
+    background: none;
+    height: 150px;
+    color: #fff;
+    padding: 1.5em;
+    border: 1px solid #9c6800;
+}
+.boton{
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    background-color: #533800;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.contacto__formulario{
+    grid-column: 2/3;
+}
+
+/* Trabajos - Tarjetas */
+
+  .portfolio {
+    width: 90vw;
+    height: 100vh;
+    color: #fff;
+} 
+
+ .portfolioTitulo{
+    padding: 4em;
+    width: 80vw;
+} 
+ .portfolio__contenedor{
+    width: 80vw;
+    height: 120vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+} 
+ .tarjeta{
+    margin: 30px;
+    width: 300px;
+    height: 350px;
+    background-color: #9c6800;
+    border-radius: 20px;
+}
+.tarjeta__imagen{
+    width: 100%;
+    height: 150px;
+    background-image: url(../imagenes/python2.jpg);
+    background-size: cover;
+} 
+ .tarjeta__titulo{
+    padding: 20px;
+}
+.tarjeta__links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tarjeta__links i{
+    font-size: 1.5em;
+}
+.btn-detallesProyecto{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+.btn-detallesProyecto a{
+    text-decoration: none;
+    color: black;
+}  
+
+/* Conocimientos */
+
+.conocimientos {
+    width: 90vw;
+    height: 100vh;
+    color: #fff;
+} 
+
+ .conocimientosTitulo{
+    padding: 4em;
+    width: 90vw;
+} 
+ .conocimientos__contenedor{
+    width: 90vw;
+    height: 100vh;
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+} 
+.conocimientosTarjeta{
+    margin: 2em;
+    padding: 1em;
+    width: 250px;
+    height: 180px;
+    background-color: #533800;
+    border-radius: 20px;
+    border: #9c6800 1px solid;
+}
+.conocimientosTarjeta__titulo{
+    padding: 5px;
+    font-size: 1rem;
+    color: #1a1a1a;
+}
+.conocimientosTarjeta__links{
+    font-size: 5rem;
+    margin-left: 50px;
+}
