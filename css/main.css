@@ -67,7 +67,7 @@ body {
 
 }
 .fotoAbout p{
- color: black;
+ color: rgb(182, 182, 182);
  
 }
 
@@ -81,11 +81,30 @@ body {
     grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
+.contenedorAbout__info{
+    display: table;
+}
 .contenedorAbout__info h1{
     font-size: 2em;
-}
-.contenedorAbout__info h1 span{
     color: #533800;
+    position: relative;
+}
+
+.contenedorAbout__info h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #1a1a1a;
+    border-left: 1px solid #1a1a1a;
+    animation: maquina 5s infinite alternate steps(27);
+}
+@keyframes maquina {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
 }
 .contenedorAbout img{
     width: 350px;
