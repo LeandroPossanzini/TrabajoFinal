@@ -1,5 +1,17 @@
 
+@media only screen and (max-width: 950px){
+  .contenedorIndex__info__texto--movimiento{
+    animation: none;
+  }
+  .contenedorIndex{
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorIndex__info h1 span{
+    animation: none;
+  }
 
+}
 
 @media only screen and (max-width: 750px)  {
 
