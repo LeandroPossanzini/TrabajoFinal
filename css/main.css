@@ -71,9 +71,9 @@ body {
  
 }
 
-/* Pagina de About  */
+/* Pagina de Index  */
 
-.contenedorAbout {
+.contenedorIndex {
     margin: 0 auto;
     width: 80vw;
     height: 80vh;
@@ -81,22 +81,22 @@ body {
     grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
-.contenedorAbout__info{
+.contenedorIndex__info{
     display: table;
 }
-.contenedorAbout__info h1{
+.contenedorIndex__info h1{
     font-size: 2em;
     color: #533800;
     position: relative;
 }
 
-.contenedorAbout__info h1 span{
+.contenedorIndex__info h1 span{
     position: absolute;
     right: 0;
     width: 0;
     background: #1a1a1a;
     border-left: 1px solid #1a1a1a;
-    animation: maquina 5s infinite alternate steps(27);
+    animation: maquina 6s infinite alternate steps(25);
 }
 @keyframes maquina {
     from {
@@ -106,10 +106,45 @@ body {
         width: 0;
     }
 }
-.contenedorAbout img{
+.contenedorIndex img{
     width: 350px;
     border: 7px solid #9c6800;
 }
+
+.contenedorIndex__info__texto--movimiento{
+    width: 350px;
+    height: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    overflow: hidden;
+}
+.indexUl{
+    list-style: none;
+    color: #444444;
+    margin-left: 5px;
+    animation: cambiar 15s infinite;
+}
+@keyframes cambiar{
+    0%{ margin-top: 0;}
+    10%{ margin-top: 0;}
+
+    12.5%{margin-top: -30px;}
+    25%{ margin-top: -30px;}
+
+    27.5%{ margin-top: -60px;}
+    40%{margin-top: -60px;}
+
+    42.5%{ margin-top: -90px;}
+    55%{ margin-top: -90px;}
+
+    57.5%{ margin-top: -120px;}
+    70%{ margin-top: -120px;}
+
+    72.5%{ margin-top: -120px;}
+    85%{ margin-top: -120px;}
+}
+
 
 /* footer */
 
