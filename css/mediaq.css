@@ -10,7 +10,6 @@
   .contenedorIndex__info h1 span{
     animation: none;
   }
-
 }
 
 @media only screen and (max-width: 750px)  {
@@ -34,7 +33,7 @@
      display: none;
     align-items: center;
     background-color: #302e2e;
-    margin-top: 21em;
+    top: 100%;
     transform: translateX(170%);
     transition: all 1s; 
   }
@@ -44,7 +43,9 @@
     display: grid;
     transform: translateX(0%); 
   }  
-
+  /* .contenedorIndex__info h1{
+    position: inherit;
+  }  */
   .fotoAbout p{
     font-size: 15px;
   }

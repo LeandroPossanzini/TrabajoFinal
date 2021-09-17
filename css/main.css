@@ -8,7 +8,7 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #1a1a1a;
+  background-color: #191c32;
 }
 .navbar{
     display: grid;
@@ -29,11 +29,11 @@ body {
 }
 .navbar .menu a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(136, 136, 136);
     padding: 10px 20px;
 }
 .navbar .menu a:hover{
-    background-color: #533800;
+    background-color: #62fcfc;
     transition: ease-in 0.5s;
 }
 .navbar .menu-bar{
@@ -86,7 +86,7 @@ body {
 }
 .contenedorIndex__info h1{
     font-size: 2em;
-    color: #533800;
+    color: #62fcfc;
     position: relative;
 }
 
@@ -94,9 +94,9 @@ body {
     position: absolute;
     right: 0;
     width: 0;
-    background: #1a1a1a;
-    border-left: 1px solid #1a1a1a;
-    animation: maquina 6s infinite alternate steps(25);
+    background: #191c32;
+    border-left: 1px solid #191c32;
+    animation: maquina 9s infinite alternate steps(26);
 }
 @keyframes maquina {
     from {
@@ -108,7 +108,7 @@ body {
 }
 .contenedorIndex img{
     width: 350px;
-    border: 7px solid #9c6800;
+    border: 7px solid #62fcfc;
 }
 
 .contenedorIndex__info__texto--movimiento{
@@ -121,9 +121,23 @@ body {
 }
 .indexUl{
     list-style: none;
-    color: #444444;
     margin-left: 5px;
     animation: cambiar 15s infinite;
+}
+.indexUl__fullStack{
+    color: black;
+}
+.indexUl__css{
+    color: blue;
+}
+.indexUl__html{
+    color: orangered;
+}
+.indexUl__js{
+    color: yellow;
+}
+.indexUl__python{
+    color: green;
 }
 @keyframes cambiar{
     0%{ margin-top: 0;}
@@ -153,6 +167,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 0;
 }
 .fab {
     text-decoration: none;
