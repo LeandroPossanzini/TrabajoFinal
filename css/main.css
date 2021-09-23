@@ -87,7 +87,6 @@ body {
 .contenedorIndex__info h1{
     font-size: 2em;
     color: #62fcfc;
-    position: relative;
 }
 
 .contenedorIndex__info h1 span{
@@ -96,15 +95,7 @@ body {
     width: 0;
     background: #191c32;
     border-left: 1px solid #191c32;
-    animation: maquina 9s infinite alternate steps(26);
-}
-@keyframes maquina {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 0;
-    }
+    
 }
 .contenedorIndex img{
     width: 350px;
@@ -167,7 +158,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 0;
 }
 .fab {
     text-decoration: none;
@@ -255,6 +245,12 @@ footer{
     width: 100%;
     height: 150px;
     background-image: url(../imagenes/python2.jpg);
+    background-size: cover;
+} 
+.tarjeta__imagen__calculadora{
+    width: 100%;
+    height: 150px;
+    background-image: url(../imagenes/calculadora-img.png);
     background-size: cover;
 } 
  .tarjeta__titulo{
