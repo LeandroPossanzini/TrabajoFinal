@@ -40,7 +40,7 @@ body {
     display: none;
 }
 .color-span{
-    color:#533800 ;
+    color:#3aa8a8 ;
 }
 .fotoAbout {
     background-color: rgb(66, 66, 66);
@@ -60,14 +60,14 @@ body {
 .fotoAbout h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
-    font-weight: 300;
+    color: #62fcfc;
 }
 .fotoAbout h1{
     font-size: 3em;
 
 }
 .fotoAbout p{
- color: #b6b6b6;
+ color: #62fcfc;
  
 }
 
@@ -87,6 +87,7 @@ body {
 .contenedorIndex__info h1{
     font-size: 2em;
     color: #62fcfc;
+    position: relative;
 }
 
 .contenedorIndex__info h1 span{
@@ -299,10 +300,43 @@ footer{
     padding: 1em;
     width: 250px;
     height: 180px;
-    background-color: #533800;
+    background-color: #7e7e7e;
     border-radius: 20px;
-    border: #9c6800 1px solid;
+    border: #000000 3px solid;
 }
+.tarjeta__css:hover{
+    background-color: rgb(73, 73, 247);
+}
+.tarjeta__html:hover{
+    background-color: rgb(243, 120, 19);
+}
+.tarjeta__js:hover{
+    background-color: rgb(250, 246, 6);
+}
+.tarjeta__sass:hover{
+    background-color: rgb(243, 19, 187);
+}
+.tarjeta__python:hover{
+    background-color: rgb(88, 241, 16);
+}
+.tarjeta__php:hover{
+    background-color: rgb(15, 31, 99);
+}
+.tarjeta__react:hover{
+    background-color: rgb(7, 216, 253);
+}
+.tarjeta__node:hover{
+    background-color: rgb(3, 121, 72);
+}
+.tarjeta__git:hover{
+    background-color: rgb(219, 126, 5);
+}.tarjeta__github:hover{
+    background-color: rgb(209, 0, 199);
+}
+
+
+
+
 .conocimientosTarjeta__titulo{
     padding: 5px;
     font-size: 1rem;
